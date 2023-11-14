@@ -1,52 +1,56 @@
 # reverse-engineering-for-5v-Usb-Charger
 I was sitting looking at a 5v charger and thought to myself why not reverse engineer it !!! This is my first reverse engineering
 
-## Demo
+## TOP:
 
 
-![App Screenshot](https://github.com/salimtoumache/IOT-HOME/blob/main/pcb/pcb%20assembly/1.gif)
+![App Screenshot](https://github.com/salimtoumache/reverse-engineering-for-5v-Usb-Charger/blob/main/EX/SCREEN/TOP.jpeg)
 
-## PCB DESIGN
+## BOTTOM:
+![App Screenshot](https://github.com/salimtoumache/reverse-engineering-for-5v-Usb-Charger/blob/main/EX/SCREEN/BOTTOM.png)
 
-- Schematic 
+I traced the paths using a multimeter, then extracted the circuit diagram. As shown in the following figure
 
-![App Screenshot](https://github.com/salimtoumache/IOT-HOME/blob/main/pcb/Schematic/Screenshot.png)
-
-- Pcb Layout
-
-![App Screenshot](https://github.com/salimtoumache/IOT-HOME/blob/main/pcb/pcb%20layout/f_b_layer.png)
-
-front layer
-
-![App Screenshot](https://github.com/salimtoumache/IOT-HOME/blob/main/pcb/pcb%20layout/b_layer.png)
-
-bottom layer
-
-![App Screenshot](https://github.com/salimtoumache/IOT-HOME/blob/main/pcb/pcb%20layout/f_layer.png)
-
-drc 
-
-![App Screenshot](https://github.com/salimtoumache/IOT-HOME/blob/main/pcb/pcb%20layout/drc.png)
+![App Screenshot](https://github.com/salimtoumache/reverse-engineering-for-5v-Usb-Charger/blob/main/EX/SCREEN/SCH1.jpeg)
+![App Screenshot](https://github.com/salimtoumache/reverse-engineering-for-5v-Usb-Charger/blob/main/EX/SCREEN/SCH2.jpeg)
 
 
-- Pcb manufacturi
+# 1.Schematic
 
-Am glad at the outcome of this PCB board design which I made and had manufactured at JLCPCB ,china 
+I drew the circuit diagram on KICAD
+![App Screenshot](https://github.com/salimtoumache/reverse-engineering-for-5v-Usb-Charger/blob/main/EX/SCREEN/SCH.jpeg)
 
-![App Screenshot](https://github.com/salimtoumache/IOT-HOME/blob/main/pcb/pcb%20manufacturing/f_lyr.jpeg)
+# 2.Layout
 
-![App Screenshot](https://github.com/salimtoumache/IOT-HOME/blob/main/pcb/pcb%20manufacturing/b_lyr.jpeg)
+I set all component footprint I only found a problem with the transformer (EE10 Voltage Transformer smps) I designed it again by measuring the diameters of the pins in it and taking all its dimensions
 
-- Pcb assembly
+![App Screenshot](https://github.com/salimtoumache/reverse-engineering-for-5v-Usb-Charger/blob/main/EX/SCREEN/BOM.jpeg)
 
-![App Screenshot](https://github.com/salimtoumache/IOT-HOME/blob/main/pcb/pcb%20assembly/1.gif)
+Finally I routed the PCB tracks
 
-- BOM
+![App Screenshot](https://github.com/salimtoumache/reverse-engineering-for-5v-Usb-Charger/blob/main/EX/SCREEN/LAYOUT1.jpeg)
+![App Screenshot](https://github.com/salimtoumache/reverse-engineering-for-5v-Usb-Charger/blob/main/EX/SCREEN/LAYOUT2.jpeg)
+![App Screenshot](https://github.com/salimtoumache/reverse-engineering-for-5v-Usb-Charger/blob/main/EX/SCREEN/LAYOUT3.jpeg)
 
-![App Screenshot](https://github.com/salimtoumache/IOT-HOME/blob/main/pcb/BOM/Screenshot.png)
+# 3.3D
 
-You can find the bom csv file in the following link : https://github.com/salimtoumache/IOT-HOME/blob/main/pcb/BOM/smart_home_V1_bom.csv
+## TOP:
+![App Screenshot](https://github.com/salimtoumache/reverse-engineering-for-5v-Usb-Charger/blob/main/EX/SCREEN/2.jpeg)
+![App Screenshot](https://github.com/salimtoumache/reverse-engineering-for-5v-Usb-Charger/blob/main/EX/SCREEN/4.jpeg)
+## BOTTOM:
+![App Screenshot](https://github.com/salimtoumache/reverse-engineering-for-5v-Usb-Charger/blob/main/EX/SCREEN/1.jpeg)
+![App Screenshot](https://github.com/salimtoumache/reverse-engineering-for-5v-Usb-Charger/blob/main/EX/SCREEN/3.jpeg)
 
-- Gerber file
+# Assembly Files
+- Bom file : https://github.com/salimtoumache/reverse-engineering-for-5v-Usb-Charger/blob/main/EX/ASSEMBLY/BOM/BOM.csv
+- Gerber file : https://github.com/salimtoumache/reverse-engineering-for-5v-Usb-Charger/tree/main/EX/ASSEMBLY/GERBER
+- POS file : https://github.com/salimtoumache/reverse-engineering-for-5v-Usb-Charger/blob/main/EX/ASSEMBLY/POS/POS.csv
+- Sch file : https://github.com/salimtoumache/reverse-engineering-for-5v-Usb-Charger/tree/main/EX/ASSEMBLY/SCH
+# Documentation
+https://github.com/salimtoumache/reverse-engineering-for-5v-Usb-Charger/blob/main/EX/DOC/Pcb%20Reverse%20Engineering.pdf
+# Design
+- Layout : https://github.com/salimtoumache/reverse-engineering-for-5v-Usb-Charger/blob/main/EX/LAYOUT/LAYOUT.pdf
+- Sch : https://github.com/salimtoumache/reverse-engineering-for-5v-Usb-Charger/blob/main/EX/SCH/SCH.pdf
+- Screen : https://github.com/salimtoumache/reverse-engineering-for-5v-Usb-Charger/tree/main/EX/SCREEN
 
-You find open source manufacturing files that you can use with pleasure : https://github.com/salimtoumache/IOT-HOME/blob/main/pcb/gerber.zip
+
